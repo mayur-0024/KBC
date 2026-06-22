@@ -59,13 +59,12 @@ products = [
 ]
 
 # show products
-print(f"{'Sr':<5}|{'Category':<14}|{'Name':<16}|{'Price':<10}|{'Brand'}")
+print(f"{'Sr':^5}|{'Category':<14}|{'Name':<16}|{'Price':<10}|{'Brand'}")
 print("-"*60)
 
 for i, (category, name, price, brand) in enumerate(products, start=1):
     print(f"{i:<5}|{category:<14}|{name:<16}|₹{price:<10}|{brand}")
 
-    
 cart = {}
 
 # input loop
@@ -74,21 +73,23 @@ while True:
 
     if choose.lower() == "na":
         break
- 
+
     choose = int(choose) #convert string to integer
     
-    if choose<1 or choose>4:
+    if choose < 1 or choose > 4:
         print("Invalid Input!")
         continue
 
     qty = int(input("Enter Quantity: "))
 
-    product = products[choose - 1] #seperate each tuple"()"
+    product = products[choose -1] #seperate each tuple"()"
 
     if product[1] in cart: # if in cart
-        cart[product[1]] += qty #if phone already exist, add again because user want 2 phone
+        cart[product[1]] += qty
+        print(cart) #if phone already exist, add again because user want 2 phone
     else:
-        cart[product[1]] = qty #else add in cart
+        cart[product[1]] = qty
+        print(cart) #else add in cart
 
 
 # bill function

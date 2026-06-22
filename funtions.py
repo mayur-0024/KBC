@@ -148,8 +148,6 @@
 
 
 
-
-
 # SET
 # students={"mayur", "sheryash", "pooja"}
 # st2={"vaibhav", "tanmay", "mayur"}
@@ -161,12 +159,14 @@
 # students.remove("jspm")#throw error
 # students.pop()
 # students.clear()
+
 # print(students)
 # print(students.union(st2))
-# print(students.intersection(st2))
-# print(students.difference(st2))
+# print(students.intersection(st2))#common element show
+# print(students.difference(st2))#different element show which is not in list 2, but in list 1
 
 
+#string functions
 # name= "pranav"
 # name1= "hello world"
 # data= "python,java,ai,ml,dl"

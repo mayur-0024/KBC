@@ -48,7 +48,7 @@ for  i in range(0, len(questions)):
         elif i==8:
             money=8000
             print(f"You have Won Money 🎉, Which is ₹ {money}")
-        elif i==10:
+        elif i==9:
             money=10000
             print(f"You have Won Money 🎉, Which is ₹ {money}")
 
